@@ -1,0 +1,23 @@
+First of all, go to the conf folder of nginx.
+Create a backup for nginx.conf
+Then make the following changes:
+location / {
+  root "D:/Buffer";
+}
+Keep in mind not to touch any other changes.
+Then fire up the task manager, terminate the current running nginx instance.
+Then go to the nginx folder and then double click on nginx.exe
+Go back to the task manager, you should be able to see two nginx instances 
+running at the same time. 
+Go to your local drive, and create the folder structure like the following:
+Buffer
+ -html
+  hello.html
+ -image
+  cat.png
+ index.html
+Then open your browser, test the following links:
+http://localhost
+http://localhost/image/cat.png
+http://localhost/html/hello.html
+You'll find that the loading speed is super fast.
